@@ -33,11 +33,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/*<header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Welcome to my first react app</p>
-          </header>*/}
-        <Navbar color="dark" dark expand="md">
+        <Navbar color="dark" dark expand="md" className="fixed-top">
           <Container>
             <NavbarBrand className="navbar-brand" href="/">
               This Scenic Life
@@ -81,27 +77,27 @@ class App extends Component {
             <h1>Blog</h1>
             <Row className="d-flex">
               <Col>
-                <a href="#">
+                <a href="/">
                   <img
                     className="rounded-circle"
                     src={require("./img/zion-canyon.jpg")}
                     alt=""
                   />
                 </a>
-                <a href="#">
+                <a href="/">
                   <h3>Zion National Park</h3>
                   <p>The most magical place in the American desert!</p>
                 </a>
               </Col>
               <Col>
-                <a href="#">
+                <a href="/">
                   <img
                     className="rounded-circle"
                     src={require("./img/crested-butte-fall.jpg")}
                     alt=""
                   />
                 </a>
-                <a href="#">
+                <a href="/">
                   <h3>Rocky Mountains</h3>
                   <p>
                     Pheonomenal fall colors in Western Colorado do not
@@ -110,14 +106,14 @@ class App extends Component {
                 </a>
               </Col>
               <Col>
-                <a href="#">
+                <a href="/">
                   <img
                     className="rounded-circle"
                     src={require("./img/san-diego-coast.jpg")}
                     alt=""
                   />
                 </a>
-                <a href="#">
+                <a href="/">
                   <h3>California Coast</h3>
                   <p>
                     Anywhere along the Pacific Coast Highway is a place to stop
@@ -134,6 +130,7 @@ class App extends Component {
             <Row className="row">
               <Col>
                 <iframe
+                  title="youtube-alum-cave"
                   src="https://www.youtube.com/embed/vbG6sN6dfCk"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -155,6 +152,7 @@ class App extends Component {
             <Row className="row">
               <Col>
                 <iframe
+                  title="youtube-angels-landing"
                   src="https://www.youtube.com/embed/nHWv6SiL1Gs"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -174,6 +172,7 @@ class App extends Component {
             <Row className="row">
               <Col>
                 <iframe
+                  title="youtube-phelps-lake"
                   src="https://www.youtube.com/embed/E_oJAkvobP0"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -197,9 +196,42 @@ class App extends Component {
             <Row>
               <Col>
                 <h1>About</h1>
+                <p className="about-header">
+                  This Scenic Life is all about exploring and enjoying the
+                  outdoors while bringing you on the journey. We are two
+                  passionate outdoors guys with an interest in providing high
+                  quality media for our fellow outdoors enthusiasts.
+                </p>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <img
+                  className="rounded-circle"
+                  src={require("./img/about-kyle-portrait.jpg")}
+                  alt=""
+                />
+                <h3>Kyle</h3>
                 <p>
-                  Now this is a story all about how my life got twist-turned
-                  upside-down!
+                  Kyle is an expert on the mountains of the southeast,
+                  particularly anything in North Carolina. He also has
+                  significant miles in the American Southwest. re you a fan of
+                  Asheville, the Black Mountains, the Smokies, or even Zion? If
+                  so, Kyle has you covered.
+                </p>
+              </Col>
+              <Col>
+                <img
+                  className="rounded-circle"
+                  src={require("./img/about-daniel-portrait.jpg")}
+                  alt=""
+                />
+                <h3>Daniel</h3>
+                <p>
+                  Daniel is quickly learning as much as possible about the Rocky
+                  Mountains and the Colorado Plateau. Recently he's also been
+                  exploring the pacific coast. If you want some inspiration out
+                  West beyond the Southwest, you're in the right place.
                 </p>
               </Col>
             </Row>
@@ -210,11 +242,14 @@ class App extends Component {
             <Row>
               <Col>
                 <h1>Contact</h1>
-                <hr id="email-split" />
                 <p>
-                  <a>email@gmail.com</a>
+                  <hr id="email-split" />
+                  <a href="mailto:evacreations.home@gmail.com">
+                    <i className="far fa-envelope" />
+                    evacreations.home@gmail.com
+                  </a>
+                  <hr id="email-split" />
                 </p>
-                <hr id="email-split" />
               </Col>
             </Row>
           </Container>

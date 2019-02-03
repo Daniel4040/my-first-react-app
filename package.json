@@ -10,6 +10,7 @@
     "react-scripts": "2.1.3",
     "reactstrap": "^7.1.0"
   },
+  "homepage": "http://daniel4040.github.io/my-first-react-app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

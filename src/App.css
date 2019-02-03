@@ -139,10 +139,20 @@ div {
   padding-bottom: 2rem;
 }
 
+#about p {
+  padding-bottom: 4rem;
+}
+
+.about-header {
+  color: #6c757d;
+  font-style: italic;
+}
+
 #contact {
   background-color: rgb(0, 0, 0);
   padding-top: 8rem;
   padding-bottom: 8rem;
+  text-decoration: none;
 }
 
 #contact h1,
@@ -151,8 +161,12 @@ a {
   color: white;
 }
 
+#contact i {
+  margin-right: 5px;
+}
+
 #email-split {
-  width: 50%;
+  width: 100%;
   margin-top: 18px;
   margin-bottom: 18px;
   border: 0;

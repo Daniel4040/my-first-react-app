@@ -77,27 +77,27 @@ class App extends Component {
             <h1>Blog</h1>
             <Row className="d-flex">
               <Col>
-                <a href="/">
+                <a href="./my-first-react-app">
                   <img
                     className="rounded-circle"
                     src={require("./img/zion-canyon.jpg")}
                     alt=""
                   />
                 </a>
-                <a href="/">
+                <a href="./my-first-react-app">
                   <h3>Zion National Park</h3>
                   <p>The most magical place in the American desert!</p>
                 </a>
               </Col>
               <Col>
-                <a href="/">
+                <a href="./my-first-react-app">
                   <img
                     className="rounded-circle"
                     src={require("./img/crested-butte-fall.jpg")}
                     alt=""
                   />
                 </a>
-                <a href="/">
+                <a href="./my-first-react-app">
                   <h3>Rocky Mountains</h3>
                   <p>
                     Pheonomenal fall colors in Western Colorado do not
@@ -106,14 +106,14 @@ class App extends Component {
                 </a>
               </Col>
               <Col>
-                <a href="/">
+                <a href="./my-first-react-app">
                   <img
                     className="rounded-circle"
                     src={require("./img/san-diego-coast.jpg")}
                     alt=""
                   />
                 </a>
-                <a href="/">
+                <a href="./my-first-react-app">
                   <h3>California Coast</h3>
                   <p>
                     Anywhere along the Pacific Coast Highway is a place to stop

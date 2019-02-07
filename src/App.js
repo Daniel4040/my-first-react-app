@@ -48,6 +48,9 @@ class App extends Component {
                   <NavLink href={"#videos"}>Videos</NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink href={"#research"}>Research</NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink href={"#about"}>About</NavLink>
                 </NavItem>
                 <NavItem>
@@ -187,6 +190,32 @@ class App extends Component {
                   National Park, hands down! This trail offers one of the most
                   unique hiking experiences you can ever have.
                 </p>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="research" id="research">
+          <Container>
+            <h1>Research</h1>
+            <Row className="d-flex">
+              <Col>
+                <a href="./">
+                  <img
+                    className="rounded-circle"
+                    src={require("./img/zion-canyon.jpg")}
+                    alt=""
+                  />
+                </a>
+                <a href="./">
+                  <h3>National Park Traffic</h3>
+                  <p>
+                    We've been studying yearly and monthly visitation data in
+                    the National Parks, looking for trends for tent campers,
+                    backpackers, hikers and more. If you're curious to learn
+                    more about our beautiful shared public spaces, check out our
+                    big data analysis project!
+                  </p>
+                </a>
               </Col>
             </Row>
           </Container>

@@ -80,14 +80,14 @@ class App extends Component {
             <h1>Blog</h1>
             <Row className="d-flex">
               <Col>
-                <a href="./">
+                <a href="/zion001">
                   <img
                     className="rounded-circle"
                     src={require("./img/zion-canyon.jpg")}
                     alt=""
                   />
                 </a>
-                <a href="./">
+                <a href={"/zion001"}>
                   <h3>Zion National Park</h3>
                   <p>The most magical place in the American desert!</p>
                 </a>

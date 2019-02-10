@@ -1,0 +1,28 @@
+body {
+  background-color: #ecf0f1;
+  max-width: 700px;
+  width: 80%;
+  border: 20px solid #27ae60;
+  margin: 20px auto;
+  font-family: "Roboto";
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #3498db;
+}
+
+.first-p {
+  border-left: 5px solid #27ae60;
+  padding-left: 5px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #27ae60, #ccc);
+}

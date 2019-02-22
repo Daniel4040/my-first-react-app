@@ -10,14 +10,6 @@ div {
   text-align: center;
 }
 
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .navbar-brand {
   font-family: "Kaushan Script";
   font-weight: 200;
@@ -64,13 +56,6 @@ div {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
-
-/* #blog .col {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-} */
 
 #blog h1 {
   padding-bottom: 4rem;
@@ -221,28 +206,11 @@ img {
   margin-bottom: 20px;
 }
 
-/* .Col {
-  padding-left: 3rem;
-  padding-right: 3rem;
-} */
-
-/* @media (max-width: 575px) {
-  .container {
-    max-width: 90vw;
-  }
-} */
-
 @media (min-width: 320px) {
   .container {
     max-width: 320px;
   }
 }
-
-/* @media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-} */
 
 @media (min-width: 768px) {
   .container {
@@ -263,31 +231,3 @@ img {
     max-width: 33.333333%;
   }
 }
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #61dafb;
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

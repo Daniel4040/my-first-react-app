@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import logo from "./logo.svg";
 import "./App.css";
 import {
   Collapse,
@@ -12,7 +11,6 @@ import {
   Container,
   Row,
   Col,
-  // Jumbotron,
   Button
 } from "reactstrap";
 
@@ -80,14 +78,14 @@ class App extends Component {
             <h1>Blog</h1>
             <Row className="d-flex">
               <Col>
-                <a href="/zion001">
+                <a href="./">
                   <img
                     className="rounded-circle"
                     src={require("./img/zion-canyon.jpg")}
                     alt=""
                   />
                 </a>
-                <a href={"/zion001"}>
+                <a href="./">
                   <h3>Zion National Park</h3>
                   <p>The most magical place in the American desert!</p>
                 </a>

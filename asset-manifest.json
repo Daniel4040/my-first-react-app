@@ -1,7 +1,7 @@
 {
-  "main.css": "/my-first-react-app/static/css/main.591e9ff6.chunk.css",
-  "main.js": "/my-first-react-app/static/js/main.1c6619b1.chunk.js",
-  "main.js.map": "/my-first-react-app/static/js/main.1c6619b1.chunk.js.map",
+  "main.css": "/my-first-react-app/static/css/main.08d942a8.chunk.css",
+  "main.js": "/my-first-react-app/static/js/main.ed76573f.chunk.js",
+  "main.js.map": "/my-first-react-app/static/js/main.ed76573f.chunk.js.map",
   "static/css/1.40518055.chunk.css": "/my-first-react-app/static/css/1.40518055.chunk.css",
   "static/js/1.a2987697.chunk.js": "/my-first-react-app/static/js/1.a2987697.chunk.js",
   "static/js/1.a2987697.chunk.js.map": "/my-first-react-app/static/js/1.a2987697.chunk.js.map",
@@ -13,9 +13,9 @@
   "static/media/about-kyle-portrait.jpg": "/my-first-react-app/static/media/about-kyle-portrait.db0ac277.jpg",
   "static/media/about-daniel-portrait.jpg": "/my-first-react-app/static/media/about-daniel-portrait.52ca6e5b.jpg",
   "static/media/App.css": "/my-first-react-app/static/media/durango-rr.0ce1b4cc.jpg",
-  "static/css/main.591e9ff6.chunk.css.map": "/my-first-react-app/static/css/main.591e9ff6.chunk.css.map",
+  "static/css/main.08d942a8.chunk.css.map": "/my-first-react-app/static/css/main.08d942a8.chunk.css.map",
   "static/css/1.40518055.chunk.css.map": "/my-first-react-app/static/css/1.40518055.chunk.css.map",
   "index.html": "/my-first-react-app/index.html",
-  "precache-manifest.5f0059e0c79dc2f62e39d7fa87ef6fbe.js": "/my-first-react-app/precache-manifest.5f0059e0c79dc2f62e39d7fa87ef6fbe.js",
+  "precache-manifest.6acb70f24de5534e3a5b535e858634f7.js": "/my-first-react-app/precache-manifest.6acb70f24de5534e3a5b535e858634f7.js",
   "service-worker.js": "/my-first-react-app/service-worker.js"
 }

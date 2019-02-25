@@ -1,4 +1,4 @@
-body {
+.blog {
   background-color: #ecf0f1;
   max-width: 700px;
   width: 80%;
@@ -7,20 +7,22 @@ body {
   font-family: "Roboto";
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
+  font-family: "Montserrat";
 }
 
-h4 {
+.heading4 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: #3498db;
 }
 
-.first-p {
+.first {
   border-left: 5px solid #27ae60;
   padding-left: 5px;
 }
 
-hr {
+.hr {
   border: 0;
   height: 1px;
   background: #333;

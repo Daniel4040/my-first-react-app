@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import "./Zion001.css";
+import zionStyles from "./zion001.module.css";
 class Zion001 extends Component {
   render() {
     return (
-      <div>
-        <h4>February 09 2019</h4>
-        <h1>My Second Blog Post</h1>
-        <p class="first-p">
+      <div className={zionStyles.blog}>
+        <h4 className={zionStyles.heading4}>February 09 2019</h4>
+        <h1>Zion Post 2</h1>
+        <p className={zionStyles.first}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
           consectetur in quae officiis expedita vero maxime mollitia facilis
           deserunt illo quo reprehenderit eum, omnis beatae, aut non deleniti!
@@ -24,11 +24,11 @@ class Zion001 extends Component {
           asperiores fugiat aspernatur optio veniam quos enim? Cum a illum
           quibusdam nostrum magni qui!
         </p>
-        <hr />
+        <hr className={zionStyles.hr} />
 
-        <h4>February 03 2019</h4>
-        <h1>My First Blog Post</h1>
-        <p class="first-p">
+        <h4 className={zionStyles.heading4}>February 03 2019</h4>
+        <h1>Zion Post 1</h1>
+        <p className={zionStyles.first}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
           impedit suscipit debitis perferendis sed dolore aperiam soluta
           dignissimos necessitatibus enim dolores neque quod eos ab tempora

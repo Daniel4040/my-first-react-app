@@ -24,24 +24,20 @@ div {
   font-family: "Montserrat";
   text-transform: uppercase;
 }
-
-.intro-section {
-  height: 100vh;
-  background-image: url(img/durango-rr.jpg);
-  background-size: cover;
-  font-family: "Montserrat";
-  text-transform: uppercase;
-}
-
-.overlay {
+/* .overlay {
   position: absolute;
   background-color: #212529;
   height: 100vh;
   width: 100vw;
   opacity: 0.6;
-}
-
-.intro-section .container {
+  padding-top: 40vh;
+} */
+.intro-section {
+  height: 100vh;
+  background-image: url(./img/durango-rr.jpg);
+  background-size: cover;
+  font-family: "Montserrat";
+  text-transform: uppercase;
   padding-top: 40vh;
 }
 

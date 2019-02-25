@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import appStyles from "./App.module.css";
 import {
   Collapse,
   Navbar,
@@ -30,15 +30,18 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Navbar color="dark" dark expand="md" className="fixed-top">
+      <div className={appStyles.App}>
+        <Navbar color="dark" dark expand="md" className={"fixed-top text-left"}>
           <Container>
-            <NavbarBrand className="navbar-brand" href="./">
+            <NavbarBrand className={appStyles["navbar-brand"]} href="./">
               This Scenic Life
             </NavbarBrand>
-            <NavbarToggler className="navbar-toggler" onClick={this.toggle} />
+            <NavbarToggler
+              className={appStyles["navbar-toggler"]}
+              onClick={this.toggle}
+            />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="nav-items ml-auto" navbar>
+              <Nav className={`${appStyles["nav-items"]} ml-auto`} navbar>
                 <NavItem>
                   <NavLink href={"#blog"}>Blog</NavLink>
                 </NavItem>
@@ -58,9 +61,8 @@ class App extends Component {
             </Collapse>
           </Container>
         </Navbar>
-        <div className="intro-section">
-          <div className="overlay" />
-          <Container className="container">
+        <div className={appStyles["intro-section"]}>
+          <Container className={"container"}>
             <Row>
               <Col>
                 <p>Love For The Outdoors</p>
@@ -73,19 +75,19 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className="blog" id="blog">
+        <div className={appStyles.blog} id={appStyles.blog}>
           <Container>
             <h1>Blog</h1>
-            <Row className="d-flex">
+            <Row className={"d-flex"}>
               <Col>
-                <a href="./">
+                <a href="/zion001">
                   <img
-                    className="rounded-circle"
+                    className={"rounded-circle"}
                     src={require("./img/zion-canyon.jpg")}
                     alt=""
                   />
                 </a>
-                <a href="./">
+                <a href="/zion001">
                   <h3>Zion National Park</h3>
                   <p>The most magical place in the American desert!</p>
                 </a>
@@ -93,7 +95,7 @@ class App extends Component {
               <Col>
                 <a href="./">
                   <img
-                    className="rounded-circle"
+                    className={"rounded-circle"}
                     src={require("./img/crested-butte-fall.jpg")}
                     alt=""
                   />
@@ -109,7 +111,7 @@ class App extends Component {
               <Col>
                 <a href="./">
                   <img
-                    className="rounded-circle"
+                    className={"rounded-circle"}
                     src={require("./img/san-diego-coast.jpg")}
                     alt=""
                   />
@@ -125,10 +127,10 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className="videos" id="videos">
+        <div className={appStyles.videos} id={appStyles.videos}>
           <h1>Videos</h1>
           <Container>
-            <Row className="row">
+            <Row className={"row"}>
               <Col>
                 <iframe
                   title="youtube-alum-cave"
@@ -150,7 +152,7 @@ class App extends Component {
                 </p>
               </Col>
             </Row>
-            <Row className="row">
+            <Row className={"row"}>
               <Col>
                 <iframe
                   title="youtube-angels-landing"
@@ -170,7 +172,7 @@ class App extends Component {
                 </p>
               </Col>
             </Row>
-            <Row className="row">
+            <Row className={"row"}>
               <Col>
                 <iframe
                   title="youtube-phelps-lake"
@@ -192,14 +194,14 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className="research" id="research">
+        <div className={appStyles.research} id={appStyles.research}>
           <Container>
             <h1>Research</h1>
-            <Row className="d-flex">
+            <Row className={"d-flex"}>
               <Col>
                 <a href="./">
                   <img
-                    className="rounded-circle"
+                    className={"rounded-circle"}
                     src={require("./img/zion-canyon.jpg")}
                     alt=""
                   />
@@ -218,12 +220,12 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className="about" id="about">
+        <div className={appStyles.about} id={appStyles.about}>
           <Container>
             <Row>
               <Col>
                 <h1>About</h1>
-                <p className="about-header">
+                <p className={appStyles["about-header"]}>
                   This Scenic Life is all about exploring and enjoying the
                   outdoors while bringing you on the journey. We are two
                   passionate outdoors guys with an interest in providing high
@@ -234,7 +236,7 @@ class App extends Component {
             <Row>
               <Col>
                 <img
-                  className="rounded-circle"
+                  className={"rounded-circle"}
                   src={require("./img/about-kyle-portrait.jpg")}
                   alt=""
                 />
@@ -249,7 +251,7 @@ class App extends Component {
               </Col>
               <Col>
                 <img
-                  className="rounded-circle"
+                  className={"rounded-circle"}
                   src={require("./img/about-daniel-portrait.jpg")}
                   alt=""
                 />
@@ -264,18 +266,20 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className="contact" id="contact">
+        <div className={appStyles.contact} id={appStyles.contact}>
           <Container>
             <Row>
               <Col>
                 <h1>Contact</h1>
                 <p>
-                  <hr id="email-split" />
+                  <hr id={appStyles["email-split"]} />
                   <a href="mailto:evacreations.home@gmail.com">
-                    <i className="far fa-envelope" />
+                    <i
+                      className={`${appStyles.far} ${appStyles["fa-envelope"]}`}
+                    />
                     evacreations.home@gmail.com
                   </a>
-                  <hr id="email-split" />
+                  <hr id={appStyles["email-split"]} />
                 </p>
               </Col>
             </Row>

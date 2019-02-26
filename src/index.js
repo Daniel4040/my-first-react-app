@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
-import Zion001 from "./zion001";
+import Zion001 from "./Zion001";
 import * as serviceWorker from "./serviceWorker";
 
 const routes = (

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import zionStyles from "./zion001.module.css";
+import zionStyles from "./Zion001.module.css";
 class Zion001 extends Component {
   render() {
     return (

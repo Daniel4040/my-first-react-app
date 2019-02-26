@@ -7,15 +7,15 @@ import App from "./App";
 import Zion001 from "./Zion001";
 import * as serviceWorker from "./serviceWorker";
 
-const routes = (
-  <BrowserRouter>
+const Routes = (
+  <BrowserRouter basename="/my-first-react-app">
     <div>
       <Route path="/" component={App} exact={true} />
-      <Route path="/zion001" component={Zion001} exact={true} />
+      <Route path="/zion001" component={Zion001} />
     </div>
   </BrowserRouter>
 );
 
-ReactDOM.render(routes, document.getElementById("root"));
+ReactDOM.render(Routes, document.getElementById("root"));
 
 serviceWorker.unregister();

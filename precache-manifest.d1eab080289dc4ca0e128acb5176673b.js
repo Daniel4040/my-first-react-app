@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/my-first-react-app/static/media/zion-canyon.8f6b8f39.jpg"
   },
   {
-    "revision": "d49776e185b3fdbec28a",
+    "revision": "b40323f16d02e9ad6dc2",
     "url": "/my-first-react-app/static/css/main.9583aa94.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/my-first-react-app/static/media/durango-rr.0ce1b4cc.jpg"
   },
   {
-    "revision": "d49776e185b3fdbec28a",
-    "url": "/my-first-react-app/static/js/main.d49776e1.chunk.js"
+    "revision": "b40323f16d02e9ad6dc2",
+    "url": "/my-first-react-app/static/js/main.b40323f1.chunk.js"
   },
   {
     "revision": "c51aca94e1f861ea1daf49390ec204a5",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/my-first-react-app/static/css/1.2c9736d8.chunk.css"
   },
   {
-    "revision": "e9588145d73ae46bae33ddda27f90a2e",
+    "revision": "7d8d27ce2f47ced6fd7e109494836e6b",
     "url": "/my-first-react-app/index.html"
   }
 ];

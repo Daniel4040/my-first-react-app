@@ -17,23 +17,33 @@ import {
 class App extends Component {
   constructor(props) {
     super(props);
+    this.homeRef = React.createRef();
+    this.blogRef = React.createRef();
+    this.videosRef = React.createRef();
+    this.researchRef = React.createRef();
+    this.aboutRef = React.createRef();
+    this.contactRef = React.createRef();
 
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false
     };
   }
+  scroll(ref) {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  }
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
+
   render() {
     return (
       <div className={appStyles.App}>
         <Navbar color="dark" dark expand="md" className={"fixed-top text-left"}>
           <Container>
-            <NavbarBrand className={appStyles["navbar-brand"]} href="./">
+            <NavbarBrand className={appStyles["navbar-brand"]} href="#">
               This Scenic Life
             </NavbarBrand>
             <NavbarToggler
@@ -43,19 +53,54 @@ class App extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className={`${appStyles["nav-items"]} ml-auto`} navbar>
                 <NavItem>
-                  <NavLink href={"#blog"}>Blog</NavLink>
+                  <NavLink
+                    href={"#blog"}
+                    onClick={() => {
+                      this.scroll(this.blogRef);
+                    }}
+                  >
+                    Blog
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href={"#videos"}>Videos</NavLink>
+                  <NavLink
+                    href={"#videos"}
+                    onClick={() => {
+                      this.scroll(this.videosRef);
+                    }}
+                  >
+                    Videos
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href={"#research"}>Research</NavLink>
+                  <NavLink
+                    href={"#research"}
+                    onClick={() => {
+                      this.scroll(this.researchRef);
+                    }}
+                  >
+                    Research
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href={"#about"}>About</NavLink>
+                  <NavLink
+                    href={"#about"}
+                    onClick={() => {
+                      this.scroll(this.aboutRef);
+                    }}
+                  >
+                    About
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href={"#contact"}>Contact</NavLink>
+                  <NavLink
+                    href={"#contact"}
+                    onClick={() => {
+                      this.scroll(this.contactRef);
+                    }}
+                  >
+                    Contact
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
@@ -75,7 +120,7 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className={appStyles.blog} id={appStyles.blog}>
+        <div className={appStyles.blog} id={appStyles.blog} ref={this.blogRef}>
           <Container>
             <h1>Blog</h1>
             <Row className={"d-flex"}>
@@ -127,7 +172,11 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className={appStyles.videos} id={appStyles.videos}>
+        <div
+          className={appStyles.videos}
+          id={appStyles.videos}
+          ref={this.videosRef}
+        >
           <h1>Videos</h1>
           <Container>
             <Row className={"row"}>
@@ -194,7 +243,11 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className={appStyles.research} id={appStyles.research}>
+        <div
+          className={appStyles.research}
+          id={appStyles.research}
+          ref={this.researchRef}
+        >
           <Container>
             <h1>Research</h1>
             <Row className={"d-flex"}>
@@ -220,7 +273,11 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className={appStyles.about} id={appStyles.about}>
+        <div
+          className={appStyles.about}
+          id={appStyles.about}
+          ref={this.aboutRef}
+        >
           <Container>
             <Row>
               <Col>
@@ -266,7 +323,11 @@ class App extends Component {
             </Row>
           </Container>
         </div>
-        <div className={appStyles.contact} id={appStyles.contact}>
+        <div
+          className={appStyles.contact}
+          id={appStyles.contact}
+          ref={this.contactRef}
+        >
           <Container>
             <Row>
               <Col>

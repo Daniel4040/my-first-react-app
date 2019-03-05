@@ -112,7 +112,15 @@ class App extends Component {
               <Col>
                 <p>Love For The Outdoors</p>
                 <p>
-                  <Button tag="a" color="success" size="large" href={"#blog"}>
+                  <Button
+                    tag="a"
+                    color="success"
+                    size="large"
+                    href={"#blog"}
+                    onClick={() => {
+                      this.scroll(this.blogRef);
+                    }}
+                  >
                     Explore
                   </Button>
                 </p>
